@@ -1,6 +1,7 @@
 package nullObjectDesignPattern;
 
-/*base interface or abstract class that client will use.
+/*
+base interface or abstract class that client will use.
 * AbstractObject defines the contract Client expects
 * it may also contain shared logic for the implementing classes
 * */
@@ -32,7 +33,11 @@ class Coder extends Emp
         return false;
     }
 }
-/*NullObject implements AbstractObject and provides neutral behavior in case of null scenarios*/
+
+/*
+NullObject implements AbstractObject and provides neutral behavior
+ in case of null scenarios
+ */
 class NoClient extends Emp
 {
     @Override
